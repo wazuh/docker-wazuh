@@ -39,7 +39,7 @@ ADD https://raw.githubusercontent.com/wazuh/wazuh/$TEMPLATE_VERSION/extensions/e
 RUN chmod go-w /etc/filebeat/wazuh-template.json
 
 COPY config/etc/ /etc/
-COPY --chown=root:ossec config/create_user.py /var/ossec/framework/scripts/create_user.py
+COPY --chown=root:wazuh config/create_user.py /var/ossec/framework/scripts/create_user.py
 
 # Prepare permanent data
 # Sync calls are due to https://github.com/docker/docker/issues/9547
