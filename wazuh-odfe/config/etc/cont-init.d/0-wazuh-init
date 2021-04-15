@@ -103,9 +103,9 @@ create_ossec_key_cert() {
 # Copy all files from $WAZUH_CONFIG_MOUNT to $WAZUH_INSTALL_PATH and respect
 # destination files permissions
 #
-# For example, to mount the file /var/ossec/data/etc/ossec.conf, mount it at
-# $WAZUH_CONFIG_MOUNT/etc/ossec.conf in your container and this code will
-# replace the ossec.conf file in /var/ossec/data/etc with yours.
+# For example, to mount the file /var/ossec/data/etc/manager.conf, mount it at
+# $WAZUH_CONFIG_MOUNT/etc/manager.conf in your container and this code will
+# replace the manager.conf file in /var/ossec/data/etc with yours.
 ##############################################################################
 
 mount_files() {

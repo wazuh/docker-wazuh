@@ -35,9 +35,9 @@ function_wazuh_migration(){
         return
       fi
 
-      \cp -f /wazuh-migration/data/etc/ossec.conf /var/ossec/etc/ossec.conf
-      chown root:wazuh /var/ossec/etc/ossec.conf
-      chmod 640 /var/ossec/etc/ossec.conf
+      \cp -f /wazuh-migration/data/etc/manager.conf /var/ossec/etc/manager.conf
+      chown root:wazuh /var/ossec/etc/manager.conf
+      chmod 640 /var/ossec/etc/manager.conf
 
       \cp -f /wazuh-migration/data/etc/client.keys /var/ossec/etc/client.keys
       chown wazuh:wazuh /var/ossec/etc/client.keys

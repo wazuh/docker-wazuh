@@ -20,7 +20,7 @@ file:
     group: wazuh
     filetype: file
     contains: []
-  /var/ossec/etc/ossec.conf:
+  /var/ossec/etc/manager.conf:
     exists: true
     mode: "0660"
     owner: root

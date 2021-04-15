@@ -35,7 +35,7 @@ services:
       - ./production_cluster/ssl_certs/root-ca.pem:/etc/ssl/root-ca.pem
       - ./production_cluster/ssl_certs/filebeat.pem:/etc/ssl/filebeat.pem
       - ./production_cluster/ssl_certs/filebeat.key:/etc/ssl/filebeat.key
-      - ./production_cluster/wazuh_cluster/wazuh_manager.conf:/wazuh-config-mount/etc/ossec.conf
+      - ./production_cluster/wazuh_cluster/wazuh_manager.conf:/wazuh-config-mount/etc/manager.conf
 
   wazuh-worker:
     image: wazuh/wazuh-odfe:5.0.0
@@ -64,7 +64,7 @@ services:
       - ./production_cluster/ssl_certs/root-ca.pem:/etc/ssl/root-ca.pem
       - ./production_cluster/ssl_certs/filebeat.pem:/etc/ssl/filebeat.pem
       - ./production_cluster/ssl_certs/filebeat.key:/etc/ssl/filebeat.key
-      - ./production_cluster/wazuh_cluster/wazuh_worker.conf:/wazuh-config-mount/etc/ossec.conf
+      - ./production_cluster/wazuh_cluster/wazuh_worker.conf:/wazuh-config-mount/etc/manager.conf
 
   elasticsearch:
     image: amazon/opendistro-for-elasticsearch:1.12.0
