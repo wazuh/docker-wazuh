@@ -67,7 +67,7 @@ services:
       - ./production_cluster/wazuh_cluster/wazuh_worker.conf:/wazuh-config-mount/etc/manager.conf
 
   elasticsearch:
-    image: amazon/opendistro-for-elasticsearch:1.12.0
+    image: amazon/opendistro-for-elasticsearch:1.13.2
     hostname: elasticsearch
     restart: always
     ports:
@@ -90,7 +90,7 @@ services:
       - ./production_cluster/elastic_opendistro/internal_users.yml:/usr/share/elasticsearch/plugins/opendistro_security/securityconfig/internal_users.yml
 
   elasticsearch-2:
-    image: amazon/opendistro-for-elasticsearch:1.12.0
+    image: amazon/opendistro-for-elasticsearch:1.13.2
     hostname: elasticsearch-2
     restart: always
     environment:
@@ -111,7 +111,7 @@ services:
       - ./production_cluster/elastic_opendistro/internal_users.yml:/usr/share/elasticsearch/plugins/opendistro_security/securityconfig/internal_users.yml
 
   elasticsearch-3:
-    image: amazon/opendistro-for-elasticsearch:1.12.0
+    image: amazon/opendistro-for-elasticsearch:1.13.2
     hostname: elasticsearch-3
     restart: always
     environment:

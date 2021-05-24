@@ -146,39 +146,27 @@ ADMIN_PRIVILEGES=true               # App privileges
 
 ## Branches
 
-* `4.0` branch on correspond to the latest Wazuh-Docker stable version.
 * `master` branch contains the latest code, be aware of possible bugs on this branch.
-* `Wazuh.Version` (for example 3.13.1_7.8.0 or 4.1.0) branch. This branch contains the current release referenced in Docker Hub. The container images are installed under the current version of this branch.
+* `stable` branch on correspond to the last Wazuh stable version.
 
 
 ## Compatibility Matrix
 
 | Wazuh version | ODFE    | XPACK  |
 |---------------|---------|--------|
-| v5.0.0        | 1.12.0  | 7.10.2 |
-|---------------|---------|--------|
-| v4.3.0        | 1.12.0  | 7.10.2 |
-|---------------|---------|--------|
-| v4.2.0        | 1.12.0  | 7.10.2 |
-|---------------|---------|--------|
+| v5.0.0        | 1.13.2  | 7.10.2 |
+| v4.3.0        | 1.13.2  | 7.10.2 |
+| v4.2.0        | 1.13.2  | 7.10.2 |
+| v4.1.5        | 1.13.2  | 7.10.2 |
 | v4.1.4        | 1.12.0  | 7.10.2 |
-|---------------|---------|--------|
 | v4.1.3        | 1.12.0  | 7.10.2 |
-|---------------|---------|--------|
 | v4.1.2        | 1.12.0  | 7.10.2 |
-|---------------|---------|--------|
 | v4.1.1        | 1.12.0  | 7.10.2 |
-|---------------|---------|--------|
 | v4.1.0        | 1.12.0  | 7.10.2 |
-|---------------|---------|--------|
 | v4.0.4        | 1.11.0  |        |
-|---------------|---------|--------|
 | v4.0.3        | 1.11.0  |        |
-|---------------|---------|--------|
 | v4.0.2        | 1.11.0  |        |
-|---------------|---------|--------|
 | v4.0.1        | 1.11.0  |        |
-|---------------|---------|--------|
 | v4.0.0        | 1.10.1  |        |
 
 ## Credits and Thank you

@@ -4,7 +4,7 @@
 if [[ $CHANGE_WELCOME == "true" ]]
 then
     echo "Set Wazuh app as the default landing page"
-    echo "server.defaultRoute: /app/wazuh" >> /usr/share/kibana/config/kibana.yml
+    echo "server.defaultRoute: /app/wazuh?security_tenant=global" >> /usr/share/kibana/config/kibana.yml
 
     echo "Set custom welcome styles"
     cp -f /tmp/custom_welcome/template.js.hbs /usr/share/kibana/src/legacy/ui/ui_render/bootstrap/template.js.hbs

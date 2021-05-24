@@ -1,7 +1,7 @@
 # Wazuh Docker Copyright (C) 2021 Wazuh Inc. (License GPLv2)
-FROM amazon/opendistro-for-elasticsearch-kibana:1.12.0
+FROM amazon/opendistro-for-elasticsearch-kibana:1.13.2
 USER kibana
-ARG ELASTIC_VERSION=7.10.0
+ARG ELASTIC_VERSION=7.10.2
 ARG WAZUH_VERSION=5.0.0
 ARG WAZUH_APP_VERSION="${WAZUH_VERSION}_${ELASTIC_VERSION}"
 

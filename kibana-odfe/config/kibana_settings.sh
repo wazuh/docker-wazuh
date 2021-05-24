@@ -18,8 +18,6 @@ WAZUH_MAJOR=4
 # Customize elasticsearch ip
 ##############################################################################
 sed -i "s|elasticsearch.hosts:.*|elasticsearch.hosts: $el_url|g" /usr/share/kibana/config/kibana.yml
-# disable multitenancy
-sed -i "s|opendistro_security.multitenancy.enabled:.*|opendistro_security.multitenancy.enabled: false|g" /usr/share/kibana/config/kibana.yml
 
 # If KIBANA_INDEX was set, then change the default index in kibana.yml configuration file. If there was an index, then delete it and recreate.
 if [ "$KIBANA_INDEX" != "" ]; then

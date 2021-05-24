@@ -17,6 +17,12 @@ All notable changes to this project will be documented in this file.
 
 - Update Wazuh to version [4.2.0](https://github.com/wazuh/wazuh/blob/v4.2.0/CHANGELOG.md#v420)
 
+## Wazuh Docker v4.1.5
+### Added
+
+- Update Wazuh to version [4.1.5](https://github.com/wazuh/wazuh/blob/v4.1.5/CHANGELOG.md#v415)
+- Update ODFE compatibility to version 1.13.2
+
 ## Wazuh Docker v4.1.4
 ### Added
 
