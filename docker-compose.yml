@@ -16,6 +16,7 @@ services:
       - ELASTIC_USERNAME=admin
       - ELASTIC_PASSWORD=admin
       - FILEBEAT_SSL_VERIFICATION_MODE=none
+      - FILEBEAT_METRICS_ENABLED=true
     volumes:
       - ossec_api_configuration:/var/ossec/api/configuration
       - ossec_etc:/var/ossec/etc

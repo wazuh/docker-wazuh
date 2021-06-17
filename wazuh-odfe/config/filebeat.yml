@@ -12,6 +12,7 @@ setup.template.json.path: '/etc/filebeat/wazuh-template.json'
 setup.template.json.name: 'wazuh'
 setup.template.overwrite: true
 setup.ilm.enabled: false
+logging.metrics.enabled: true
 output.elasticsearch:
   hosts: ['https://elasticsearch:9200']
   #username:

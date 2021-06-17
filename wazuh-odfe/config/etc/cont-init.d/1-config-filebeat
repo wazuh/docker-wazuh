@@ -8,6 +8,11 @@ if [ "$ELASTICSEARCH_URL" != "" ]; then
   sed -i "s|hosts:.*|hosts: ['$ELASTICSEARCH_URL']|g" /etc/filebeat/filebeat.yml
 fi
 
+if [ "$FILEBEAT_METRICS_ENABLED" != "" ]; then
+  >&2 echo "Configuring metrics."
+  sed -i "s|logging.metrics.enabled:.*|logging.metrics.enabled: '$METRICS_ENABLED'|g" /etc/filebeat/filebeat.yml
+fi
+
 # Configure filebeat.yml security settings
 
 if [ "$ELASTIC_USERNAME" != "" ]; then
